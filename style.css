@@ -1,0 +1,15 @@
+html {
+    font-family: 'Libre Baskerville', serif;
+    color: #444
+}
+
+#titleHero {
+    font-size: 52px;
+    margin-bottom: 32px;
+}
+
+.pHero {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
