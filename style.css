@@ -1,10 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Libre Baskerville', serif;
     color: #444
 }
 
+
+#navHome {
+    position: relative;
+    text-align: center;
+    color: bisque;
+    text-decoration: none;
+}
+
+.navIndex:visited,
+.navIndex {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: rgb(248, 233, 215)
+}
+
 #titleHero {
-    font-size: 52px;
+    font-size: 60px;
     margin-bottom: 32px;
 }
 
@@ -12,4 +34,50 @@ html {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 48px;
+}
+
+.button:link,
+.button:visited {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #654321;
+    color: bisque;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 5px
+}
+
+#h2Home {
+    font-size: 35px;
+    margin-bottom: 48px;
+}
+
+#sectionHome {
+    padding: 96px 0;
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px
+}
+
+.headerHome {
+    height: 100vh;
+    position: relative;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(60, 34, 2, 0.6)), url(Images/heroImage.jpeg);
+    background-size: cover;
+    color: bisque
+}
+
+.mainContainer {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
 }
