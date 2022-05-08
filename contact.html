@@ -14,41 +14,38 @@
 
 <body id="contactBody">
 
-    <nav class="container" id="navHome">
+    <nav class="navContainer" id="navHome">
 
-        <a class="navIndex" href="index.html">Home</a>
+        <a class="navLinks" id="navHome" href="index.html">Home</a>
 
-        <a class="navIndex" href="products.html">Products</a>
+        <a class="navLinks" id="navProducts" href="products.html">Products</a>
 
-        <a class="navIndex" href="contact.html">Contact Us</a>
+        <a class="navLinks" id="navContact" href="contact.html">Contact Us</a>
     </nav>
 
     <header class="contactHeader">
-        <h1 id="h1Contact">Contact Us</h1>
-        <p> Any Questions, Comments or Concerns?
+
+        <h1 class="h1Contact">Contact Us</h1>
+        <p class="h1Contact"> Any Questions, Comments or Concerns?
             Please send us a breif description
             on how we can service you and our GOAT
             team will reach out to you in 2-3
             buisness days</p>
 
+
+
+
+        <section class="contactBox">
+            <form id="contactForm">
+                <input type="text" class="inputFields" placeholder="Full Name">
+                <input type="email" class="inputFields" placeholder="Email">
+                <input type="text" class="inputFields" placeholder="Subject">
+                <textarea type="text" class="textArea" placeholder="Comments"></textarea>
+                <button type="button" id="contactBtn">Send Message</button>
+            </form>
+        </section>
+
     </header>
-
-
-
-    <section class="contactBox">
-        <form id="contactForm">
-            <input type="text" class="inputFields" placeholder="Full Name">
-            <input type="email" class="inputFields" placeholder="Email">
-            <input type="text" class="inputFields" placeholder="Subject">
-            <textarea type="text" class="textArea" placeholder="Comments"></textarea>
-            <button type="button" id="contactBtn">Send Message</button>
-        </form>
-
-
-    </section>
-
-
-
 
 
 

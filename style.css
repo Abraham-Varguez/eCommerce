@@ -6,27 +6,37 @@
 
 html {
     font-family: 'Libre Baskerville', serif;
-    color: #444
 }
 
+/* ********************
+        NAV 
+******************** */
 
-#navHome {
-    position: relative;
-    text-align: center;
-    color: bisque;
+.navContainer {
+    background-color: #2f1b06;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 5px;
+
+}
+
+.navLinks {
     text-decoration: none;
+    color: antiquewhite;
+    text-transform: uppercase;
 }
 
-.navIndex:visited,
-.navIndex {
-    padding-right: 10px;
-    padding-left: 10px;
-    text-decoration: none;
-    color: rgb(248, 231, 209)
-}
+
+/* 
+******************************
+            HOME   
+ ******************************  */
+
 
 #titleHero {
-    font-size: 60px;
+    font-size: 75px;
     margin-bottom: 32px;
 }
 
@@ -41,12 +51,13 @@ html {
 .button:visited {
     font-size: 20px;
     font-weight: 700;
-    background-color: #654321;
-    color: rgb(221, 184, 136);
+    background-color: #6e4924;
+    color: bisque;
     text-decoration: none;
     display: inline-block;
     padding: 16px 32px;
-    border-radius: 5px
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 #h2Home {
@@ -59,16 +70,10 @@ html {
 
 }
 
-.container {
-    margin: 0 auto;
-    width: 1200px
-}
-
 .headerHome {
     height: 100vh;
     position: relative;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(31, 17, 1, 0.6)), url(Images/heroImage.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(31, 17, 1, 0.5)), url(Images/heroImage.jpeg);
     background-size: cover;
     color: bisque
 }
@@ -88,40 +93,37 @@ html {
 /* **********************
         CONTACT PAGE
 *************************   */
-.contactHeader {
-    text-align: center;
-    width: 750px;
-    top: 15%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    padding-top: 50px;
-    color: rgb(43, 36, 30);
-}
-
-#h1Contact {
-    font-size: 65px;
-    padding-bottom: 15px;
-}
-
 #contactBody {
-
-    background-image: linear-gradient(rgba(56, 47, 35, 0.35), rgba(56, 47, 34, 0.35)), url(Images/goat.avif);
-    background-size: cover;
-    width: 100vh;
     font-family: 'Libre Baskerville', serif;
+}
+
+/* USE MARGIN */
+
+.contactHeader {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(56, 47, 35, 0.35), rgba(56, 47, 34, 0.35)), url(Images/goat.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* USE MARGIN */
+
+.h1Contact {
+    display: flex;
+
 }
 
 .contactBox {
     width: 500px;
-    background-color: rgb(209, 192, 169);
-    box-shadow: : 0 0 20px 0 #999;
-    top: 55%;
-    left: 75%;
-    transform: translate(-50%, -50%);
     position: absolute;
-    border-radius: 5px;
-    border: solid rgb(82, 68, 56);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(230, 182, 114);
+    border: solid rgb(131, 55, 17);
 }
 
 #contactForm {
@@ -138,10 +140,9 @@ html {
     padding-left: 10px;
     padding-right: 10px;
     border: 1px solid rgb(82, 68, 56);
-    border-radius: 14px;
-    border-radius: 14px;
+    border-radius: 5px;
     outline: none;
-    background-color: antiquewhite;
+    background-color: rgb(255, 249, 241);
 }
 
 .textArea {
@@ -153,10 +154,9 @@ html {
     padding-left: 10px;
     padding-right: 10px;
     border: 1px solid rgb(82, 68, 56);
-    border-radius: 14px;
-    border-radius: 14px;
+    border-radius: 5px;
     outline: none;
-    background-color: antiquewhite;
+    background-color: rgb(252, 243, 232);
 }
 
 #contactBtn {
@@ -164,8 +164,95 @@ html {
     color: #efefef;
     margin-top: 18px;
     padding: 10px;
-    background-color: rgb(82, 68, 56);
+    background-color: rgb(131, 55, 17);
     font-size: 12px;
     border: none;
+}
 
+/* **********************
+        FOOTER
+************************* 
+
+
+
+
+
+
+
+
+/* 
+***************************
+        PRODUCT
+*************************** */
+.bodyProducts {
+    background-image: linear-gradient(rgba(56, 47, 35, 0.35), rgba(56, 47, 34, 0.35)), url(Images/brownpattern.jpeg);
+    ;
+    background-size: auto;
+}
+
+.productsHeader {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 20px;
+    color: #f7b502;
+}
+
+.h1Products {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+}
+
+.productContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-top: 100px;
+    row-gap: 150px;
+}
+
+.productContainer .item {
+
+    background-color: #efbf56;
+    border: 2px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 10px 10px #211312;
+    text-align: center;
+    justify-self: center;
+    width: 300px;
+    height: 309px;
+}
+
+.item .title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 1em;
+    color: rgb(42, 32, 0);
+}
+
+.item img {
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+.item .info {
+    text-align: center;
+    margin-bottom: 0.75em;
+}
+
+.btnProduct {
+    background-color: #654321;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #efefef;
+    text-transform: uppercase;
+}
+
+.btnProduct:hover {
+    box-shadow: 0px 5px 5px #4c3719;
+    padding-top: 12px;
+    padding-left: 12px;
 }
