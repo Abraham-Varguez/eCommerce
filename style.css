@@ -13,20 +13,94 @@ html {
 ******************** */
 
 .navContainer {
-    background-color: #2f1b06;
+    background-color: #211312;
     font-size: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 50px;
-    padding: 5px;
-
+    padding: 20px;
 }
 
 .navLinks {
     text-decoration: none;
     color: antiquewhite;
     text-transform: uppercase;
+    border-bottom: solid 1px antiquewhite;
 }
+
+.navLinks:hover {
+    color: rgb(255, 217, 172);
+}
+
+
+/* **********************
+        FOOTER
+************************* */
+
+.footerContainer {
+    background-color: #2f1b06;
+    color: antiquewhite;
+    padding-top: 20px;
+}
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footerContent h3 {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin-bottom: 15px;
+}
+
+.footerContent p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socialLinks {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+
+.socialLinks li {
+    margin: 0 10px;
+}
+
+.socialLinks a {
+    text-decoration: none;
+    color: antiquewhite;
+
+}
+
+.socialLinks a i {
+    font-size: 30px;
+}
+
+.btmFooter {
+    background-color: #211312;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.btmFooter p {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
 
 
 /* 
@@ -35,7 +109,7 @@ html {
  ******************************  */
 
 
-#titleHero {
+.titleHero {
     font-size: 75px;
     margin-bottom: 32px;
 }
@@ -51,8 +125,8 @@ html {
 .button:visited {
     font-size: 20px;
     font-weight: 700;
-    background-color: #6e4924;
-    color: bisque;
+    background-color: #492f0d;
+    color: antiquewhite;
     text-decoration: none;
     display: inline-block;
     padding: 16px 32px;
@@ -60,15 +134,13 @@ html {
     font-weight: bold;
 }
 
-#h2Home {
-    font-size: 35px;
-    margin-bottom: 48px;
+.button:hover {
+    box-shadow: 0px 5px 5px #4c3719;
+    padding-top: 20px;
+    padding-left: 40px;
+    color: rgb(255, 217, 172);
 }
 
-#sectionHome {
-    padding: 96px 0;
-
-}
 
 .headerHome {
     height: 100vh;
@@ -84,11 +156,8 @@ html {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
     text-align: center;
 }
-
-
 
 /* **********************
         CONTACT PAGE
@@ -96,8 +165,6 @@ html {
 #contactBody {
     font-family: 'Libre Baskerville', serif;
 }
-
-/* USE MARGIN */
 
 .contactHeader {
     height: 100vh;
@@ -109,11 +176,27 @@ html {
     background-position: center;
 }
 
-/* USE MARGIN */
+.contactHeader {
+    color: rgb(67, 27, 7);
+}
+
+
 
 .h1Contact {
     display: flex;
+    font-size: 60px;
+    justify-content: end;
+    padding-right: 3.5em;
+    padding-bottom: 8px;
+    padding-top: 25px;
+}
 
+.pContact {
+    text-align: center;
+    font-size: 20px;
+    width: 700px;
+    float: right;
+    padding-right: 3em;
 }
 
 .contactBox {
@@ -121,9 +204,10 @@ html {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(230, 182, 114);
-    border: solid rgb(131, 55, 17);
+    transform: translate(18%, -25%);
+    background-color: rgb(229, 215, 199);
+    border: solid 3px rgb(74, 32, 11);
+    border-radius: 5px;
 }
 
 #contactForm {
@@ -142,7 +226,7 @@ html {
     border: 1px solid rgb(82, 68, 56);
     border-radius: 5px;
     outline: none;
-    background-color: rgb(255, 249, 241);
+    background-color: rgb(255, 255, 255));
 }
 
 .textArea {
@@ -156,103 +240,121 @@ html {
     border: 1px solid rgb(82, 68, 56);
     border-radius: 5px;
     outline: none;
-    background-color: rgb(252, 243, 232);
+    background-color: rgb(255, 255, 255);
 }
 
-#contactBtn {
+.contactBtn {
+    margin-top: 2em;
+    margin-left: 8em;
+}
+
+.contactBtn a {
     border-radius: 20px;
-    color: #efefef;
-    margin-top: 18px;
+    color: rgb(251, 251, 251);
     padding: 10px;
-    background-color: rgb(131, 55, 17);
-    font-size: 12px;
+    background-color: rgb(74, 32, 11);
+    font-size: 15px;
     border: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-/* **********************
-        FOOTER
-************************* 
-
-
-
-
-
-
-
+.contactBtn a:hover {
+    box-shadow: 0px 5px 5px #4c3719;
+    padding-bottom: 12px;
+    padding-right: 12px;
+}
 
 /* 
 ***************************
         PRODUCT
 *************************** */
+
 .bodyProducts {
-    background-image: linear-gradient(rgba(56, 47, 35, 0.35), rgba(56, 47, 34, 0.35)), url(Images/brownpattern.jpeg);
-    ;
+    background-image: linear-gradient(rgba(32, 14, 1, 0.3), rgba(32, 14, 0, 0.3)), url(Images/brownpattern.webp);
     background-size: auto;
 }
 
 .productsHeader {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    padding-top: 20px;
-    color: #f7b502;
+    font-size: 45px;
+    padding-top: 95px;
+    padding-bottom: 40px;
+    color: antiquewhite;
 }
 
 .h1Products {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 25px;
+    background-color: #271a0a77;
+    border-radius: 2px;
+    padding: 20px;
+    border-bottom: solid 2px antiquewhite;
+    border-top: solid 2px #f9e1c8;
 }
 
 .productContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    padding-top: 100px;
+    padding-top: 150px;
     row-gap: 150px;
+    padding-bottom: 150px;
 }
 
 .productContainer .item {
-
-    background-color: #efbf56;
-    border: 2px;
-    border-radius: 10px;
+    border: solid 5px rgb(126, 84, 47);
+    background-color: #f9e1c8d0;
+    border-radius: 5px;
     padding: 5px;
     box-shadow: 0px 10px 10px #211312;
     text-align: center;
     justify-self: center;
     width: 300px;
-    height: 309px;
+    height: 350px;
 }
 
 .item .title {
+    padding: 1em;
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 1em;
-    color: rgb(42, 32, 0);
+    color: rgb(30, 24, 10);
 }
 
 .item img {
     max-width: 150px;
     border-radius: 5px;
+    max-height: 150px;
+    max-width: 150px;
 }
 
 .item .info {
+    padding-top: 1em;
     text-align: center;
     margin-bottom: 0.75em;
+    color: rgb(30, 24, 10)
 }
 
 .btnProduct {
-    background-color: #654321;
+    background-color: #5f4123;
     border: none;
-    padding: 8px;
+    padding: 12px;
     border-radius: 10px;
+}
+
+.btnProduct a {
     font-weight: bold;
     color: #efefef;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .btnProduct:hover {
-    box-shadow: 0px 5px 5px #4c3719;
-    padding-top: 12px;
-    padding-left: 12px;
+    box-shadow: 0px 5px 5px #191209;
+    padding-top: 14px;
+    padding-left: 14px;
+}
+
+.btnProduct a:hover {
+    color: bisque
 }

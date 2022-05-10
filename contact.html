@@ -8,50 +8,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" ">
     <title>Contact Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel=" stylesheet" href="style.css">
 </head>
 
-<body id="contactBody">
+<body class="contactBody">
 
-    <nav class="navContainer" id="navHome">
+    <nav class="navContainer">
 
-        <a class="navLinks" id="navHome" href="index.html">Home</a>
+        <a class="navLinks" href="index.html">Home</a>
 
-        <a class="navLinks" id="navProducts" href="products.html">Products</a>
+        <a class="navLinks" href="products.html">Products</a>
 
-        <a class="navLinks" id="navContact" href="contact.html">Contact Us</a>
+        <a class="navLinks" href="contact.html">Contact Us</a>
     </nav>
 
     <header class="contactHeader">
 
         <h1 class="h1Contact">Contact Us</h1>
-        <p class="h1Contact"> Any Questions, Comments or Concerns?
+        <p class="pContact"> Any Questions, Comments or Concerns?
             Please send us a breif description
             on how we can service you and our GOAT
             team will reach out to you in 2-3
             buisness days</p>
 
-
-
-
-        <section class="contactBox">
-            <form id="contactForm">
-                <input type="text" class="inputFields" placeholder="Full Name">
-                <input type="email" class="inputFields" placeholder="Email">
-                <input type="text" class="inputFields" placeholder="Subject">
-                <textarea type="text" class="textArea" placeholder="Comments"></textarea>
-                <button type="button" id="contactBtn">Send Message</button>
-            </form>
-        </section>
-
     </header>
 
 
-
-
-
+    <section class="contactBox">
+        <form id="contactForm">
+            <input type="text" class="inputFields" placeholder="Full Name">
+            <input type="email" class="inputFields" placeholder="Email">
+            <input type="text" class="inputFields" placeholder="Subject">
+            <textarea type="text" class="textArea" placeholder="Comments"></textarea>
+            <div class="contactBtn"><a href="#">Send Message</a></button></div>
+        </form>
+    </section>
+    <footer class="footerContainer">
+        <div class="footerContent">
+            <h3>Dapper Goat</h3>
+            <ul class="socialLinks">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="btmFooter">
+            <p>copyright &copy; 2023 Dapper Goat Inc. designed by Abraham Varguez</p>
+        </div>
+    </footer>
 
 </body>
+
 
 </html>
